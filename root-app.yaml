@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-rootapp
+  namespace: argocd
+spec:
+  destination:
+    name: hub-control-plane
+    namespace: argocd
+  source:
+    path: apps
+    repoURL: 'https://github.com/VINEETHJK/app-of-apps.git'
+    targetRevision: HEAD
+  project: default
+  # syncPolicy:
+  #   automated:
+  #     prune: true
+  #     selfHeal: true
