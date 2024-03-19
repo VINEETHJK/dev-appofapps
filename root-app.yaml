@@ -8,7 +8,7 @@ spec:
     name: hub-control-plane
     namespace: argocd
   source:
-    path: apps
+    path: child-apps
     repoURL: 'https://github.com/VINEETHJK/dev-appofapps.git'
     targetRevision: HEAD
   project: default
