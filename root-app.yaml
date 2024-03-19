@@ -9,7 +9,7 @@ spec:
     namespace: argocd
   source:
     path: apps
-    repoURL: 'https://github.com/VINEETHJK/app-of-apps.git'
+    repoURL: 'https://github.com/VINEETHJK/dev-appofapps.git'
     targetRevision: HEAD
   project: default
   # syncPolicy:
